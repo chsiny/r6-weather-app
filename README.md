@@ -15,7 +15,6 @@ This is a full-stack weather forecast application built for the R6 coding challe
 - **Composer** — to manage Laravel dependencies
 - **Node.js 16+** — required for React + Vite + Tailwind CSS frontend
 - **npm** — for installing frontend packages (or yarn, if preferred)
-- **SQLite** — default DB driver for local Laravel testing
 - A free **[Weatherbit API key](https://www.weatherbit.io/)** — required to fetch real forecast data
 
 
