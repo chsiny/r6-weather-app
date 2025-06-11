@@ -63,7 +63,7 @@ class ForecastCommand extends Command
                 $rows = collect($data['data'])->take(5)->map(function ($day) {
                     return [
                         'Date'      => $day['datetime'],
-                        'Avg (°C)'  => round(($day['max_temp'] + $day['min_temp']) / 2),
+                        'Avg (°C)'  => round($day['temp']),
                         'Max (°C)'  => round($day['max_temp']),
                         'Low (°C)'  => round($day['min_temp']),
                     ];
