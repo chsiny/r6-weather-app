@@ -48,7 +48,7 @@ class ForecastController extends Controller
             $forecast = collect($data['data'])->take(5)->map(function ($day) {
                 return [
                     'date' => $day['datetime'],
-                    'avg'  => round(($day['max_temp'] + $day['min_temp']) / 2),
+                    'avg'  => round($day['temp']),
                     'max'  => round($day['max_temp']),
                     'low'  => round($day['min_temp']),
                 ];
